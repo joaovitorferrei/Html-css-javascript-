@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: black;
+        }
+
+        a:visited {
+            color: rgb(0, 0, 0);
+        }
+        a:hover {
+            color: rgb(38, 255, 0);
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial{
+            background-color: rgb(255, 140, 140);
+        }
+        .especial::before {
+            content: '❰ ';
+            color: rgb(0, 0, 0);
+        }
+        .especial::after {
+            content: ' ❱';
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/results?search_query=criando+copia+netflix" target="_blank" class='especial'>Vou criar uma copia da netflix</a></li>
+
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps/Getting_started" target="_blank" class='especial'>Vou aprender CSS</a></li>
+
+        <li><a href="https://www.youtube.com/watch?v=i96kMML_91w" target="_blank">Estude estocismo o melhor que temos pra hoje</a></li>
+    </ul>
+</body>
+</html>
