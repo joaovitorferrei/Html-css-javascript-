@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(219, 227, 223);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 6px;
+            margin: 10px;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 1px 2px 3px rgba(104, 93, 93, 0.455);
+        }
+        nav {
+            background-color: rgba(235, 224, 224, 0.518);
+            padding: 5px;
+            box-shadow: 1px 2px 3px rgba(104, 93, 93, 0.455);
+
+
+
+        }
+        nav > a {
+            text-decoration: solid none;
+
+            font-weight: bold;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgba(16, 16, 5, 0.077);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px 5px 5px 5px;
+
+        }
+        article {
+            background-color: rgba(255, 255, 255, 0.871);
+            padding: 5px;
+        }
+        article > aside {
+                background-color: rgb(223, 234, 220);
+                padding: 5px;
+        }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            padding: 4px;
+            text-align: center;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- forma semantica Grouping Tags semanticas-->
+    <header>
+        <h1>Site</h1>
+        <nav>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+
+        </section>
+        <section id="noticias">
+                <article>
+                    <h2>Brasil ganha a copa e 2026</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa cupiditate rem blanditiis cumque doloremque id dolorum, voluptatum possimus ducimus quas soluta beatae sed veniam dicta aliquid et, molestiae modi.</p>
+                    <aside>
+                        <p>Eu sou o melhor se não pensarmos assim o ser humano fica louco</p>
+                    </aside>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por um iniciante com o frontend</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
