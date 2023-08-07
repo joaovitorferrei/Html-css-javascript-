@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em html5</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table td, table th{
+            border: 1px solid rgba(38, 10, 10, 0.233);
+            padding: 20px;
+            text-align: left;
+        }
+        table th{
+            background-color: #ddd;
+        }
+        table caption{
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        tfoot td{
+            background-color: #ddd;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cupiditate libero eaque minus blanditiis pariatur esse iusto iure quasi, a in, quisquam enim! Necessitatibus nemo eius aperiam veniam, repellat non!</p>
+    <table>
+        <caption>Uma descrição para a tabela</caption>
+        <thead>
+            <tr>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td >Corpo 1</td>
+                <td colspan="2">Corpo 2 Demon Corp</td>
+
+            </tr>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
