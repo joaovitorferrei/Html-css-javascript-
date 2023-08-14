@@ -1,22 +1,11 @@
 body {
     background-color: darkblue;
     color: white;
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
     position: relative;
 }
 
-p {
-    padding: 10px;
-=======
-    margin: 0; /* Remove todas as margens padrão */
-    padding: 0; /* Remove todos os preenchimentos padrão */
-}
-p {
-    margin: 2%;
->>>>>>> main
-}
 h1 {
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
@@ -25,24 +14,20 @@ h1 {
     text-align: center;
     border-radius: 5%;
     background: black;
-<<<<<<< HEAD
     margin: 0;
     padding: 7px;
 }
-
-a {
-    color: rgb(255, 255, 255);
+p {
+    padding-left: 5px;
 }
-
 .back {
     position: relative;
-    height: 100vh;
+    height: 400px;
     background-color: black;
     background-image: url("img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    height: 300px;
+    margin: 0; /* AQUI ESTÁ O AJUSTE: MARGEM DEFINIDA COMO 0 */
 }
 
 .image-text {
@@ -54,9 +39,13 @@ a {
     padding: 10px;
     font-size: 4vw;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
     width: 80%;
 }
 
+a {
+    color: rgb(255, 255, 255);
+}
 
 .botao {
     margin-left: 35%;
@@ -67,26 +56,3 @@ a {
     padding-left: 50px;
     padding-right: 50px;
 }
-
-=======
-    margin: 0; /* Remove todas as margens padrão */
-    padding: 7px;
-    
-}
-.back {
-    height: 300px;
-    background-color: black;
-    background-image: url("img/pexels-life-of-pix-8892.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0px;
-}
-a {
-    color: rgb(255, 255, 255);
-}
-.botao {
-    margin-left: 35%;
-    background-color: rgb(0, 0, 0);
-
-}
->>>>>>> main
