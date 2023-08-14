@@ -1,9 +1,10 @@
 body {
-    background-color: darkblue;
-    color: white;
     margin: 0;
     padding: 0;
-    position: relative;
+    background-color: darkblue; /* Cor de fundo */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 h1 {
@@ -18,12 +19,17 @@ h1 {
     padding: 7px;
 }
 p {
-    padding-left: 5px;
+    padding-left: 8px;
 }
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* Remover o sublinhado do link */
+}
+
 .back {
     position: relative;
     height: 400px;
-    background-color: black;
     background-image: url("img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,20 +45,38 @@ p {
     padding: 10px;
     font-size: 4vw;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
     width: 80%;
 }
 
-a {
-    color: rgb(255, 255, 255);
+.conteudo {
+    /* Estilos do seu conteúdo principal */
+    padding: 20px;
 }
 
 .botao {
     margin-left: 35%;
+    margin-top: 20px; /* Adicione uma margem superior para criar espaço entre o botão e o rodapé */
     background-color: black;
     color: aliceblue;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px; /* Adicione uma margem superior para criar espaço entre o rodapé e o botão */
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* Garantir que o sublinhado não apareça no hover */
+}
+
+
+.botao:hover {
+    background-color: blue;
 }
