@@ -3,13 +3,13 @@ body {
     padding: 0;
     background-color: darkblue; /* Cor de fundo */
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
 
 h1 {
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 0px groove rgb(0, 0, 0);
     font-weight: 100;
     text-align: center;
@@ -19,12 +19,13 @@ h1 {
     padding: 7px;
 }
 p {
-    padding-left: 8px;
+    padding-left: 25px;
 }
 
 a {
     color: rgb(255, 255, 255);
     text-decoration: none; /* Remover o sublinhado do link */
+    font-family: 'Roboto', sans-serif;
 }
 
 .back {
@@ -75,8 +76,11 @@ a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none; /* Garantir que o sublinhado não apareça no hover */
 }
-
-
 .botao:hover {
     background-color: blue;
 }
+.contatos {
+    font-family: 'Roboto', sans-serif;
+}
+.outras-informacoes {
+    font-family: 'Roboto', sans-serif;
