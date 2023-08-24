@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #333;
-    color: white;
+    color: rgb(37, 30, 238);
     text-align: center;
     padding: 20px;
 }
@@ -33,9 +33,15 @@ main {
 }
 
 .hero {
-    background-color: #f2f2f2;
-    padding: 50px;
+    background-image: url('background-image.jpeg'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover; /* Cubra a largura e altura */
+    background-position: center;
+    padding: 150px 0;
     text-align: center;
+    color: white;
+    margin-left: -20px; /* Remova a margem lateral padrão do body */
+    margin-right: -20px;
+    overflow: hidden; /* Evita que a imagem se expanda além da tela */
 }
 
 .services {
@@ -97,6 +103,208 @@ main {
 footer {
     text-align: center;
     padding: 20px;
+    background-color: #333;
+    color: white;
+}
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* ... (seus estilos existentes) */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remova a margem padrão do corpo */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('background-image.jpeg'); /* Substitua pelo caminho correto da imagem */
+    background-size: 100% auto; /* Cubra toda a largura e mantenha a altura original */
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.services {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+.portfolio {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* ... (seus estilos existentes) */
+
+/* ... (seus estilos existentes) */
+
+/* Estilização do botão "Mostrar/Ocultar Portfólio" */
+#togglePortfolio {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#togglePortfolio:hover {
+    background-color: #555;
+}
+
+/* Animação suave */
+@keyframes buttonHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#togglePortfolio:hover {
+    animation: buttonHover 0.5s ease-in-out infinite;
+}
+
+/* ... (resto dos seus estilos) */
+
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(33.33% - 30px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+.link {
+    color: blue;
+}
+a {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0; /* Aumente o espaçamento vertical */
     background-color: #333;
     color: white;
 }
