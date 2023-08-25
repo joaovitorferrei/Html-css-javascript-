@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(64, 10, 130, 0.926);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-image{
+    width: 35vw;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: rgb(91, 233, 186);
+}
+
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: rgba(90, 24, 171, 0.926);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: rgb(5, 226, 141);
+    font-weight: 800;
+    margin: 0px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login,
+.btn-cadastro {
+    width: 48%; /* Reduz a largura dos botões para 48% */
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px; /* Corrige um erro de digitação no valor do border-radius */
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-cadastro {
+    background-color: #f7921d; /* Cor diferente para o botão de cadastro */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os botões */
+    margin-top: 20px; /* Adicione espaço entre os botões e os campos de senha */
+}
+
+@media only screen and (max-width: 950px){
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image {
+        width: 50vh;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
