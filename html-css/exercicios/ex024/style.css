@@ -31,7 +31,7 @@ body * {
 
 .left-login > h1 {
     font-size: 3vw;
-    color: rgb(91, 233, 186);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -55,7 +55,7 @@ body * {
 }
 
 .card-login > h1 {
-    color: rgb(5, 226, 141);
+    color: rgb(255, 255, 255);
     font-weight: 800;
     margin: 0px;
 }
@@ -93,32 +93,35 @@ body * {
 
 .btn-login,
 .btn-cadastro {
-    width: 48%; /* Reduz a largura dos botões para 48% */
-    padding: 16px 0px;
+    padding: 17px 0;
+    flex-basis: 50%;
+    font-size: 16px;
+    background-color: rgb(67, 222, 98);
+    color: rgb(255, 255, 255);
     border: none;
-    border-radius: 8px; /* Corrige um erro de digitação no valor do border-radius */
-    outline: none;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #2b134b;
-    background-color: #00ff88;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .btn-cadastro {
     background-color: #f7921d; /* Cor diferente para o botão de cadastro */
 }
+.btn-cadastro > a {
+    text-decoration: none;
+    color: white;
+}
 
 .button-container {
     display: flex;
-    justify-content: space-between; /* Espaço igual entre os botões */
-    margin-top: 20px; /* Adicione espaço entre os botões e os campos de senha */
+    justify-content: center ; /* Adicione espaço entre os botões e os campos de senha */
+
 }
 
 @media only screen and (max-width: 950px){
     .card-login {
-        width: 85%;
+        width: 100%;
     }
 }
 
@@ -136,15 +139,15 @@ body * {
     }
     
     .right-login {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
     .left-image {
         width: 50vh;
     }
-
     .card-login {
-        width: 90%;
+        width: 100%;
     }
+
 }
