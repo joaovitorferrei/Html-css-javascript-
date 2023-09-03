@@ -94,7 +94,7 @@ legend {
 
     .inputUser {
         width: 100%;
-        padding: 7px;
+        padding: 0px;
     }
 
     #submit {
@@ -102,9 +102,16 @@ legend {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .box {
-        width: 100%;
+        width: 50%;
     }
+    .inputUser {
+        width: 100%;
+        padding: 0px;
 }
+    #subimit {
+        padding: 10px;
+    }
 
+}
