@@ -91,8 +91,7 @@ body * {
     color: #f0ffff94;
 }
 
-.btn-login,
-.btn-cadastro {
+.btn-login {
     padding: 17px 0;
     flex-basis: 50%;
     font-size: 16px;
@@ -103,15 +102,36 @@ body * {
     margin: 5px;
     border-radius: 10px;
     text-align: center;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
 }
 
 .btn-cadastro {
+    padding: 17px 0;
+    flex-basis: 50%;
+    font-size: 16px;
     background-color: #f7921d; /* Cor diferente para o botão de cadastro */
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
 }
+
+.btn-login:hover {
+    background-color: rgba(67, 222, 98, 0.7); /* Cor mais fraca com 70% de opacidade no hover para o botão de login */
+}
+
+.btn-cadastro:hover {
+    background-color: rgba(247, 146, 29, 0.7); /* Cor mais fraca com 70% de opacidade no hover para o botão de cadastro */
+}
+
 .btn-cadastro > a {
     text-decoration: none;
     color: white;
 }
+
 
 .button-container {
     display: flex;
