@@ -1,0 +1,31 @@
+.container {
+    background-color: #ccc;
+    height: 500px;
+
+    /* Para manter os elementos todos na mesma linha*/
+    display: flex;
+
+    flex-direction: row;
+    /* colunms | row-reverse | column-reverse */
+
+    flex-wrap: wrap;
+    /* para haver quebra de linha no-wrap e para não haver quebra de linha */
+
+    justify-content: flex-start;
+    /* flex-end | center | space-between | space-around | */
+
+    align-items: stretch;
+    /* flex-start | flex-end | center | baseline */
+
+    align-content: space-between;
+}
+.intem {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+    
+}
+
+
