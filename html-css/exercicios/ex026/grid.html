@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+        <title>Grid layout | HTML5 e CSS3 Avançados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans serif;
+            padding: 50px;
+        }
+        section {
+            display: grid;
+            border: 3px dotted orange;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        div {
+            background-color: lightgray;
+            border: 1px solid #333;
+            border-radius: 4px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        #grid_wrapper1 {
+            grid-template-columns: 200px 200px 200px;
+        }
+        #grid_wrapper1 .item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        #grid_wrapper1 .item2 {
+            grid-column-start: 1;
+            grid-row-start: 3;
+        grid-row-end: 5;
+        }
+        #grid_wrapper2 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 1em;
+        }
+        #grid_wrapper3 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 1em;
+        }
+        #grid_wrapper3 .box {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 10px;
+        }
+    </style>
+        </head>
+    <body>
+        <section id="grid_wrapper1">
+            <div class="item1">Div 1</div>
+            <div class="item2">Div 2</div>
+            <div class="item3">Div 3</div>
+            <div class="item4">Div 4</div>
+            <div class="item5">Div 5</div>
+        </section>
+        <section id="grid_wrapper2">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+                <div>Div 4</div>
+                <div>Div 5</div>
+        </section>
+        <section id="grid_wrapper2">
+            <div class="box">
+                <div class="interno">Div A</div>
+                <div class="interno">Div B</div>
+                <div class="interno">Div C</div>
+            </div>
+        </section>
+            <div>Div 2</div>
+            <div>Div 3</div>
+            <div>Div 4</div>
+            <div>Div 5</div>
+        </section>
+    </body>
+</html>
