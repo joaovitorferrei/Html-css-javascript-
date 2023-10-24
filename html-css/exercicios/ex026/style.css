@@ -1,0 +1,66 @@
+body {
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: #fa4616;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 999;
+}
+
+main {
+    margin-top: 50px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 30;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.menu-link:hover {
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    height: 100vh;
+}
+
+.item {
+    background-color: #ccc;
+    color: #fff;
+    padding: 0; /* Remova o preenchimento */
+    margin: 10px;
+    width: 1249px;
+    height: 551px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%; /* Redimensione a imagem para ocupar 100% do quadrado */
+    height: 100%; /* Redimensione a imagem para ocupar 100% do quadrado */
+    object-fit: cover; /* Mantém a proporção da imagem e a faz preencher o espaço */
+}
+

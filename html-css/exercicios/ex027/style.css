@@ -1,0 +1,40 @@
+body {
+    padding-bottom: 500px;
+}
+
+.container {
+    background-color: #eee;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #ccc;
+    border: 2px solid;
+    height: 50px;
+    width: 50px;
+}
+.box {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    flex-basis: 30px;
+
+}
+
+/* #item-1 {
+    flex-grow: 2;
+}
+
+#item-2 {
+    flex-grow: 1;
+} */
+#item-3{
+    flex-grow: 1;
+}
