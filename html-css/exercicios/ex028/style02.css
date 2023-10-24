@@ -1,0 +1,90 @@
+/* Estilos específicos para esta página */
+.principal {
+    padding: 30px; /* Adicionando padding à tela */
+}
+
+/* Seu CSS existente continua abaixo */
+.fotoprodutos,
+.fotoloja {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px; /* Adicionando preenchimento na parte inferior */
+}
+
+/* Estilos para o menu */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.imagem-esquerda {
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo para o logo */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo para os parágrafos */
+.paragrafo {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o hover no menu */
+nav ul li a:hover {
+    color: #000; /* Cor do texto quando o mouse passar por cima */
+    border: 1px solid #000; /* Borda preta */
+}
+
+
+
+
