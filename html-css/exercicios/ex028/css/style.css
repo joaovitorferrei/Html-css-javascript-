@@ -1,0 +1,250 @@
+body {
+    background-color: #eeeeee; 
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    background-color: #eeeeee;
+    color: #000000;
+    padding-top: 0px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #F2A20C;
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Adicione este estilo para limitar a largura máxima dos produtos */
+.produto {
+    display: flex; /* Torna o produto um contêiner flexível */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 300px; /* Ajuste o valor conforme necessário */
+    height: auto;
+}
+
+.produtos{
+    width:75%;
+}
+
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #212529;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.preco {
+    font-weight: bold;
+    color: #333;
+}
+.botao-comprar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao-comprar:hover {
+    background-color: #000;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+/* Estilo do menu */
+#menu {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 11px 0; /* Espaçamento interno na parte superior e inferior do menu */
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; /* Efeito de transição suave na cor do texto */
+    font-size: 18px; /* Tamanho da fonte dos itens do menu */
+    padding: 5px 20px; /* Espaçamento interno dos itens do menu */
+    border-radius: 10px; /* Borda arredondada nos itens do menu */
+}
+
+/* Estilo do menu quando o mouse está sobre ele (hover) */
+#menu ul li a:hover {
+    color: #F2A20C; /* Cor do texto ao passar o mouse */
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+strong {
+    font-weight: bold;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding: 0;
+    display: inline;
+    margin-right: 20px;
+}
+
+.banner-contato {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.banner-contato img {
+    max-width: 100%;
+}
+
+img {
+    width:100%;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    max-height: 10000px;
+}
+
+.slide {
+    display: none;
+}
+.imagem-esquerda {
+    float: left;
+    margin-right: 20px;
+}
+.fotoloja {
+    width: 1px;
+    height: 1px;
+}
+
+/* Estilo para o footer */
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: rgb(245, 230, 230); /* Cor do texto no footer */
+    padding: 10px; /* Espaçamento interno no footer */
+    text-align: center; /* Alinhamento do texto no centro */
+}
+
+/* Estilo para links no footer */
+.footer a {
+    color: #F2A20C; /* Cor dos links no footer */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilo para links no footer quando o mouse está sobre eles (hover) */
+.footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}
+
+.principal h1{
+    text-align: center;
+        font-size: 32px;
+    color: #F2A20C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.principal {
+    padding: 0px;
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #212529;
+}
+
+.principal .body{
+    padding-top: 0px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 10px;
+}
+
+
+.principal h2 {
+    font-size: 24px;
+}
+
+.principal a {
+    color: #27241f; /* Cor do link no card */
+    text-decoration: none;
+}
+
+.principal a:hover {
+    color: rgb(238, 15, 7);
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link no card */
+}
+
+/* Estilo para o card na seção principal */
+.card {
+    background-color: #ffffff; /* Cor de fundo do card */
+    padding: 20px; /* Espaçamento interno do card */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra no card */
+    border-radius: 10px; /* Borda arredondada do card */
+    margin: 0 auto; /* Centraliza o card horizontalmente */
+    max-width: 1110px; /* Largura máxima do card */
+    margin-top: 20px; /* Espaçamento superior do card */
+}
+
+.card h1 {
+    font-size: 24px; /* Tamanho da fonte para o título do card */
+}
+
+.card p {
+    font-size: 18px; /* Tamanho da fonte para o conteúdo do card */
+    margin: 10px 0; /* Espaçamento entre parágrafos */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.card img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do card */
+}
